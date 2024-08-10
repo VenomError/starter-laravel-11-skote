@@ -1,10 +1,11 @@
 {
     "name": "laravel/laravel",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "Laravel 11 starter template with skote .",
     "keywords": [
         "laravel",
-        "framework"
+        "framework",
+        "venomerror"
     ],
     "license": "MIT",
     "require": {
