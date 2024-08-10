@@ -7,6 +7,14 @@
         "framework",
         "venomerror"
     ],
+    "authors": [
+        {
+            "name": "Wawan Julianto",
+            "email": "studyweb2023@gmail.com",
+            "role": "creator",
+            "homepage": "https://github.com/VenomError"
+        }
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.2",
