@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\Partials;
+namespace App\View\Components\Partials\Topbar;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Topbar extends Component
+class Index extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Topbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.partials.topbar');
+        return view('components.partials.topbar.index');
     }
 }
