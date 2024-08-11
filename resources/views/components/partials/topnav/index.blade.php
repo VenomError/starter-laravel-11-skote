@@ -57,57 +57,7 @@
             <x-partials.topnav.language />
         </div>
 
-        <div class="dropdown d-none d-lg-inline-block ms-1">
-            <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="bx bx-customize"></i>
-            </button>
-            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
-                <div class="px-lg-2">
-                    <div class="row g-0">
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="assets/images/brands/github.png" alt="Github">
-                                <span>GitHub</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
-                                <span>Bitbucket</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="assets/images/brands/dribbble.png" alt="dribbble">
-                                <span>Dribbble</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row no-gutters">
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="assets/images/brands/dropbox.png" alt="dropbox">
-                                <span>Dropbox</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="assets/images/brands/mail_chimp.png" alt="mail_chimp">
-                                <span>Mail Chimp</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="assets/images/brands/slack.png" alt="slack">
-                                <span>Slack</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <x-partials.topnav.aplication />
 
         <div class="dropdown d-none d-lg-inline-block ms-1">
             <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
@@ -115,6 +65,7 @@
             </button>
         </div>
 
+        {{-- Notification --}}
         <div class="dropdown d-inline-block">
             <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -210,36 +161,13 @@
             </div>
         </div>
 
-        <div class="dropdown d-inline-block">
-            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
-                    alt="Header Avatar">
-                <span class="d-none d-xl-inline-block ms-1" key="t-henry">Henry</span>
-                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
-            </button>
-            <div class="dropdown-menu dropdown-menu-end">
-                <!-- item-->
-                <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle me-1"></i>
-                    <span key="t-profile">Profile</span></a>
-                <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle me-1"></i>
-                    <span key="t-my-wallet">My Wallet</span></a>
-                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end">11</span><i
-                        class="bx bx-wrench font-size-16 align-middle me-1"></i> <span
-                        key="t-settings">Settings</span></a>
-                <a class="dropdown-item" href="#"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i>
-                    <span key="t-lock-screen">Lock screen</span></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item text-danger" href="#"><i
-                        class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span
-                        key="t-logout">Logout</span></a>
-            </div>
-        </div>
+        {{-- Profile --}}
+        <x-partials.topnav.profile />
 
         <div class="dropdown d-inline-block">
-            <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+            <x-button.toggle-rightbar class="btn header-item noti-icon">
                 <i class="bx bx-cog bx-spin"></i>
-            </button>
+            </x-button.toggle-rightbar>
         </div>
 
     </div>
