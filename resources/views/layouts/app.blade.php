@@ -12,13 +12,27 @@
     </x-metadata.styles>
 </head>
 
-<body>
+<x-layouts layout="vertical" theme="dark" data-topbar="light" :preloader="true">
 
+    @isset($auth)
+    <x-slot:auth>
+        {{ $auth }}
+    </x-slot:auth>
+    @endisset
+
+
+    @empty($auth)
     {{ $slot }}
-    @livewireScripts
-    <x-metadata.scripts>
-        @stack('scripts')
-    </x-metadata.scripts>
-</body>
+    @endempty
+
+    <x-slot:scripts>
+        @livewireScripts
+        <x-metadata.scripts>
+            @stack('scripts')
+        </x-metadata.scripts>
+    </x-slot:scripts>
+</x-layouts>
+
+
 
 </html>
