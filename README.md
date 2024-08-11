@@ -10,3 +10,10 @@
 ## Laravel License
 
 The Laravel framework is open-sourced software licensed under the [Laravel MIT license](https://opensource.org/licenses/MIT).
+
+## Installation
+
+```
+composer create-project venomerror/laravel-11-starter-skote <file-name> --stability=dev
+
+```
