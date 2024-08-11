@@ -11,9 +11,7 @@
             <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
 
                 <div class="collapse navbar-collapse" id="topnav-menu-content">
-                    <ul class="navbar-nav">
-                        <x-partials.topbar />
-                    </ul>
+                    <x-partials.topbar />
                 </div>
             </nav>
         </div>
