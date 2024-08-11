@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\Icon;
+namespace App\View\Components\Layouts;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Dripicon extends Component
+class Dashboard extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Dripicon extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.icon.dripicon');
+        return view('components.layouts.dashboard');
     }
 }

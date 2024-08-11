@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\Icon;
+namespace App\View\Components\Layouts;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Material extends Component
+class Auth extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Material extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.icon.material');
+        return view('components.layouts.auth');
     }
 }

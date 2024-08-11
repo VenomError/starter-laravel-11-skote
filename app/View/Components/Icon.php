@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\Icon;
+namespace App\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Awesome extends Component
+class Icon extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Awesome extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.icon.awesome');
+        return view('components.icon');
     }
 }
