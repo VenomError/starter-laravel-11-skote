@@ -4,5 +4,7 @@
 <script src="{{ asset('assets/libs/metismenu/metisMenu.min.js') }}"></script>
 <script src="{{ asset('assets/libs/simplebar/simplebar.min.js') }}"></script>
 <script src="{{ asset('assets/libs/node-waves/waves.min.js') }}"></script>
+
+<script src="{{ asset('assets/libs/apexcharts/apexcharts.min.js') }}"></script>
 {{ $slot }}
 <script src="{{ asset('assets/js/app.js') }}"></script>
