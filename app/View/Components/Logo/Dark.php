@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\Partials;
+namespace App\View\Components\Logo;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Topnav extends Component
+class Dark extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Topnav extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.partials.topnav');
+        return view('components.logo.dark');
     }
 }

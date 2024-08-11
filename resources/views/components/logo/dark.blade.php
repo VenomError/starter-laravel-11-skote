@@ -1,0 +1,1 @@
+<img src="{{ asset('assets/images/logo-dark.png') }}" alt="logo dark lg" {{ $attributes->merge(['height' => '17']) }} >

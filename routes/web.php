@@ -8,5 +8,13 @@ Route::middleware('guest')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', App\Livewire\Dashboard\User\Index::class)->name('home');
+
+    Route::get('/dashboard', App\Livewire\Dashboard\User\Index::class)->name('dashboard');
+
+    Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
+        Route::get('/dashboard', App\Livewire\Dashboard\Admin\Index::class)->name('dashboard');
+    });
 });
+
+Route::get('/tes', App\Livewire\Dashboard\User\Index::class)->lazy();
+Route::get('/dashboard/tes', App\Livewire\Dashboard\User\Index::class)->lazy();
