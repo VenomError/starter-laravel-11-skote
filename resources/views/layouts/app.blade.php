@@ -12,9 +12,9 @@
     </x-metadata.styles>
 </head>
 
-<x-layouts layout="vertical" theme="dark" data-topbar="light" :preloader="false">
+<x-layouts layout="horizontal" theme="dark" data-topbar="light" :preloader="false">
 
-    {{-- @guest
+    @guest
     <x-slot:auth>
         {{ $slot }}
     </x-slot:auth>
@@ -23,8 +23,7 @@
 
     @auth
     {{ $slot }}
-    @endauth --}}
-    {{ $slot }}
+    @endauth
 
     <x-slot:scripts>
         @livewireScripts

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\Layouts;
+namespace App\View\Components\Layouts\Auth;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Auth extends Component
+class Index extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Auth extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.layouts.auth');
+        return view('components.layouts.auth.index');
     }
 }
