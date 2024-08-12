@@ -1,5 +1,8 @@
 <div class="row">
-  <x-alert type="primary" icon="mdi mdi-bullseye-arrow">
-    A simple primary alert—check it out!
-  </x-alert>
+  <form wire:submit='submit'>
+    <x-button.submit>
+      Submit
+    </x-button.submit>
+  </form>
+
 </div>
