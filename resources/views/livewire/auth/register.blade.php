@@ -102,9 +102,7 @@
                         <p>Already have an account ? <a href="auth-login.html" class="fw-medium text-primary">
                                 Login</a>
                         </p>
-                        <p>© <script>
-                                document.write(new Date().getFullYear())
-                            </script> Skote. Crafted with <i class="mdi mdi-heart text-danger"></i> by
+                        <p>© Skote. Crafted with <i class="mdi mdi-heart text-danger"></i> by
                             Themesbrand</p>
                     </div>
                 </div>

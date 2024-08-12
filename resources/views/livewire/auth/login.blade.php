@@ -1,4 +1,7 @@
 <div class="account-pages my-5 pt-sm-5">
+    <x-a href="{{ route('register') }}">
+        tes me
+    </x-a>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6 col-xl-5">
@@ -104,9 +107,7 @@
                     <div>
                         <p>Don't have an account ? <a href="auth-register.html" class="fw-medium text-primary"> Signup
                                 now </a> </p>
-                        <p>© <script>
-                                document.write(new Date().getFullYear())
-                            </script> Skote. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                        <p> Skote. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
                     </div>
                 </div>
 

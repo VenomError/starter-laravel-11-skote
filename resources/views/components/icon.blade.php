@@ -1,2 +1,2 @@
-@props(['name' , $class => ''])
-<i {{ $attributes->class([$name , $class])}}></i>
+@props(['icon'])
+<i {{ $attributes->class([$icon]) }}></i>

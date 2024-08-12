@@ -44,14 +44,14 @@
             </div>
         </div>
 
-        <div class="dropdown d-inline-block">
+        {{-- <div class="dropdown d-inline-block">
             <button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 <img id="header-lang-img" src="{{ asset('assets/images/flags/us.jpg') }}" alt="Header Language"
                     height="16">
             </button>
             <x-partials.topnav.language />
-        </div>
+        </div> --}}
 
         <x-partials.topnav.aplication />
 
