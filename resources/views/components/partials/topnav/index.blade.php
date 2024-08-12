@@ -2,6 +2,7 @@
     <div class="d-flex">
         <!-- LOGO -->
         <div class="navbar-brand-box">
+            {{-- impleentasi routing --}}
             <x-logo href="/dashboard/admin" />
         </div>
 
