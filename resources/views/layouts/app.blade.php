@@ -14,7 +14,7 @@
 
 <x-layouts layout="horizontal" theme="dark" data-topbar="light" :preloader="false">
 
-    @guest
+    {{-- @guest
     <x-slot:auth>
         {{ $slot }}
     </x-slot:auth>
@@ -23,7 +23,9 @@
 
     @auth
     {{ $slot }}
-    @endauth
+    @endauth --}}
+
+    {{ $slot }}
 
     <x-slot:scripts>
         @livewireScripts

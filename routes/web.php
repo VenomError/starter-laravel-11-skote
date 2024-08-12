@@ -20,3 +20,5 @@ Route::middleware('auth')->group(function () {
         Route::get('/dashboard', App\Livewire\Dashboard\Admin\Index::class)->name('dashboard');
     });
 });
+
+Route::get('/testing', App\Livewire\Dashboard\User\Index::class);
